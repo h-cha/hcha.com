@@ -21,5 +21,5 @@ from django.conf.urls import include #追加
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', include('hello.urls')),
+    path('hello/', include('hello.urls'))
 ]
