@@ -15,22 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-#from django.urls import include, path
-#import hello.views as hello
-#import hello.views as hello #追加
-#import hello.views as hello #追加
 from django.urls import include 
-#from django.conf.urls import include
-#from django.conf.urls import include #追加
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    #path('', hello.index),
-    #path('',include('hello.urls')),
-    
+    #path('admin/', admin.site.urls),
     path('', include('hello.urls')),
-   # path('/work1/', hello.work1),
-    #path('/work2/', hello.work2),
-    #path('/work3/', hello.work3),
-    #path('/work4/', hello.work4),
 ]
