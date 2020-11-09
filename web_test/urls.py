@@ -19,7 +19,7 @@ from django.urls import path
 #import hello.views as hello
 #import hello.views as hello #追加
 #import hello.views as hello #追加
-#from django.urls import include 
+from django.urls import include 
 #from django.conf.urls import include, url
 #from django.conf.urls import include #追加
 
