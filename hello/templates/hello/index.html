@@ -25,19 +25,19 @@
   <section class="about" id="about">
     <h2 class="heading">ABOUT ME</h2>
     <p class="about-text">
-      はじめまして。DjangoでWebアプリを作成しています。<br>
-      東京電機大学の大学３年です。
+      はじめまして。主にDjangoでWebアプリを作成しています。<br>
+      東京電機大学の大学３年です。実空間コンピューティング研究室に所属。
     </p>
     <p class="about-text">
-      このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。<br>
-      このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。
+      世の中に無い、新しいものを作る事を目指しています。<br>
     </p>
+    <a href="https://github.com/h-cha" target="_blank" title="GitHub"><i class="fab fa-github icon-style"></i></a>
   </section>
   <section class="works">
     <h2 class="heading">WORKS</h2>
     <div class="works-wrapper">
       <div class="work-box tree">
-        <img class="work-image" src="images/tree.jpg" alt="制作事例1">
+        <img class="work-image" src="{% static 'hello/images/tree.jpg' %}" alt="制作事例1">
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="work-box building">
-        <img class="work-image" src="images/building.jpg" alt="制作事例2">
+        <img class="work-image" src="{% static 'hello/images/sky.jpg' %}" alt="制作事例2">
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
@@ -63,7 +63,7 @@
         </div>
       </div>
       <div class="work-box lake">
-        <img class="work-image" src="images/lake.jpg" alt="制作事例3">
+        <img class="work-image" src="{% static 'hello/images/lake.jpg' %}" alt="制作事例3">
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="work-box sky">
-        <img class="work-image" src="images/sky.jpg" alt="制作事例4">
+        <img class="work-image" src="{% static 'hello/images/sky.jpg' %}" alt="制作事例4">
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
@@ -122,6 +122,7 @@
       </div>
     </div>
   </section>
+  <!--
   <section class="contact" id="contact">
     <h2 class="heading">CONTACT</h2>
     <form class="contact-form">
@@ -130,8 +131,9 @@
       <input type="submit" value="SEND">
     </form>
   </section>
+-->
   <footer class="footer">
-      c sample site
+      c hcha 
   </footer>
   <script src="lib/placeholders.min.js"></script>
 </body>
