@@ -22,7 +22,8 @@ import hello.views as hello #追加
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', hello.index),
-    path('', include('hello.urls')),
+    path('hello/', include( ('hello.urls', 'hello') ))
+    #path('', include('hello.urls')),
    # path('/work1/', hello.work1),
     #path('/work2/', hello.work2),
     #path('/work3/', hello.work3),
