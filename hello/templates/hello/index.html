@@ -1,18 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <title>シングルページレイアウト</title>
+  <title>hcha</title>
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{% static 'hello/css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'hello/css/style.css' %}">
 </head>
 <body>
   <header class="header">
-    <p class="site-title-sub">Web designer's portfolio</p>
-    <h1 class="site-title">HI, MY NAME IS...</h1>
+    <p class="site-title-sub">Web engineer's portfolio</p>
+    <h1 class="site-title">HI, MY NAME IS... HCHA</h1>
     <p class="site-description">Check out some of my works.</p>
     <div class="buttons">
       <a class="button" href="#about">LEARN MORE</a>
@@ -22,8 +25,8 @@
   <section class="about" id="about">
     <h2 class="heading">ABOUT ME</h2>
     <p class="about-text">
-      はじめまして。日本でWebデザイナーをしています。<br>
-      デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。
+      はじめまして。DjangoでWebアプリを作成しています。<br>
+      東京電機大学の大学３年です。
     </p>
     <p class="about-text">
       このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。<br>
