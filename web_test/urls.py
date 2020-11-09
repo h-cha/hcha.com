@@ -28,7 +28,7 @@ urlpatterns = [
     #path('', hello.index),
     #path('',include('hello.urls')),
     
-    #path('', include('hello.urls')),
+    path('', include('hello.urls')),
    # path('/work1/', hello.work1),
     #path('/work2/', hello.work2),
     #path('/work3/', hello.work3),
