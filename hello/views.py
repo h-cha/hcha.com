@@ -12,20 +12,20 @@ def test(request):
 
 def index(request):
     params = {
-        'goto_work1' : 'work1',
+        'goto' : 'work1',
       #  'goto_work2' : 'work2',
        # 'goto_work3' : 'work3',
         #'goto_work4' : 'work4',
     }
-    return render(request, 'hello/index.html',params)
+    return render(request, 'hello/index.html', params)
 
 
 def work1(request):
     params = {
-        'goto_home' : 'index',
+        'goto' : 'index',
     }
 
-    return render(request, 'hello/works.html',params)
+    return render(request, 'hello/works.html', params)
 
 def work2(request):
     
