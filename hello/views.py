@@ -21,8 +21,11 @@ def index(request):
 
 
 def work1(request):
+    params = {
+        'goto_home' : 'index',
+    }
 
-    return render(request, 'hello/works.html')
+    return render(request, 'hello/works.html',params)
 
 def work2(request):
     
