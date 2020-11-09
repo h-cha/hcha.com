@@ -11,13 +11,13 @@ def test(request):
     return render(request, 'hello/test.html')
 
 def index(request):
-    #params = {
-     #   'goto_work1' : 'work1',
+    params = {
+        'goto_work1' : 'work1',
       #  'goto_work2' : 'work2',
        # 'goto_work3' : 'work3',
         #'goto_work4' : 'work4',
-    #}
-    return render(request, 'hello/index.html')
+    }
+    return render(request, 'hello/index.html',params)
 
 
 def work1(request):
