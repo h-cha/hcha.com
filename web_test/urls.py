@@ -24,7 +24,8 @@ from django.conf.urls import include, url
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', hello.index),
-    path('hello/', include('hello.urls', 'hello'))
+    
+    path('hello/', include((‘cms.urls’,’cms’),)),
     #path('', include('hello.urls')),
    # path('/work1/', hello.work1),
     #path('/work2/', hello.work2),
