@@ -21,5 +21,5 @@ import hello.views as hello #追加
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', hello.index)
+    path('', hello.test)
 ]
