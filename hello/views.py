@@ -25,7 +25,7 @@ def work1(request):
     #    'goto' : 'index',
     #}
 
-    return render(request, 'hello/index.html')
+    return render(request, 'hello/works.html')
 
 def work2(request):
     
