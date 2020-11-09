@@ -18,15 +18,16 @@ from django.urls import path
 from django.urls import include, path
 #import hello.views as hello
 #import hello.views as hello #追加
-import hello.urls
+import hello.views as hello #追加
+from django.conf.urls import include 
 #from django.conf.urls import include, url
 #from django.conf.urls import include #追加
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', hello.index),
+    path('hello/',include('hello.urls'))
     
-    path('hello/', include('hello.urls')),
     #path('', include('hello.urls')),
    # path('/work1/', hello.work1),
     #path('/work2/', hello.work2),
