@@ -18,6 +18,7 @@ from django.urls import path
 #import hello.views as hello
 #import hello.views as hello #追加
 import hello.urls
+from django.conf.urls import include, url
 #from django.conf.urls import include #追加
 
 urlpatterns = [
