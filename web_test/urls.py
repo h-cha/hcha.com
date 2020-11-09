@@ -17,9 +17,9 @@ from django.contrib import admin
 from django.urls import path
 #import hello.views as hello
 import hello.views as hello #追加
-from django.conf.urls import include #追加
+#from django.conf.urls import include #追加
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', include('hello.urls'))
+    path('', hello.index)
 ]
