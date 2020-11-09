@@ -26,7 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', hello.index),
     
-    path('hello/', include(('hello.urls','hello'))),
+    path('hello/', include('hello.urls')),
     #path('', include('hello.urls')),
    # path('/work1/', hello.work1),
     #path('/work2/', hello.work2),
