@@ -415,3 +415,9 @@ body {
   transform: scale(1.1);
 }
 */
+
+  /* --- images --- */
+  .image-vw {
+    width : 70vw; 
+    height : outo;
+  }

@@ -35,11 +35,11 @@
 <p>郵便番号を検索すると同じ市区町村の郵便番号と住所のリストが表示される。</p>
 <p>同じ市区町村の世代別人口とそれを基にした円グラフが表示される</p>
 <p>下の図のようなデータ(postalcode,population)を使った</p>
-<img src="{% static 'hello/images/deta_postal.png' %}">
+<img src="{% static 'hello/images/deta_postal.png' %}" class="image-vw">
 <p>populationテーブル</p>
-<img src="{% static 'hello/images/deta_pop.png' %}">
+<img src="{% static 'hello/images/deta_pop.png' %}" class="image-vw">
 <h2>2,設計方針</h2>
-<img src="{% static 'hello/images/sekkei.png' %}">
+<img src="{% static 'hello/images/sekkei.png' %}" class="image-vw">
 <p>クライアント側はhtmlを読み込むだけでサーバー側はデータベースの実行を行い、行った結果をクライアント側に渡している</p>
 <p>index.htmlを実行すると郵便番号検索画面が出る</p>
 <h2>3,プログラムの説明</h2>
@@ -50,19 +50,19 @@
 <p>その後取得したprefectureとciytでpopulationのcityで一致する項目を表示する</p>
 <p>例えばpostalcodeのcityは「札幌市中央区」でpopulationのcityは「札幌市　中央区」なので間にスペースを入れないと一致しない</p>
 <p>その例外処理を行っている</p>
-<img src="{% static 'hello/images/java.png' %}">
+<img src="{% static 'hello/images/java.png' %}" class="image-vw">
 <p>同じ市区町村の世代別人口を表示</p>
 <p>String sql_p = "SELECT * FROM population WHERE city='" + city_name + "'";</p>
 <h2>4,実行結果</h2>
 <h3>プログラムの起動後のウィンドウ</h3>
 <p>郵便番号が検索できる</p>
-<img src="{% static 'hello/images/kensaku.png' %}">
+<img src="{% static 'hello/images/kensaku.png' %}" class="image-vw">
 <h3>2730000を入力</h3>
 <p>同じ市区町村の郵便番号の一覧を表示</p>
 <p>スクロールできるようになっている</p>
 <p>人口と世代別人口を円グラフで表示</p>
-<img src="{% static 'hello/images/2730000.png' %}">
-<img src="{% static 'hello/images/en.png' %}">
+<img src="{% static 'hello/images/2730000.png' %}" class="image-vw">
+<img src="{% static 'hello/images/en.png' %}" class="image-vw">
 <p>検索画面に戻る</p>
 <h3>検索画面で11111111を入力してみる</h3>
 <p>郵便番号ではない数字を入力されたら「入力番号は郵便番号ではありません」と出る。</p>
