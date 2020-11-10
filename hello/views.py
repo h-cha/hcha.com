@@ -33,6 +33,7 @@ def work1(request):
         'text3' : 'もともとはワードウルフゲームをする予定でしたが、難しくて断念',
         'text4' : '',
         'skill' : '#Django #SQLite #html #css #javascript',
+        'github' : 'https://github.com/h-cha/django_online_chat',
     }
 
     return render(request, 'hello/works.html',params)
@@ -46,6 +47,7 @@ def work2(request):
         'text3' : 'そこで中学生がつまづいていた課題をサポートするWEBアプリを２人で作成しました。',
         'text4' : '動画解説はWEBの教科書にしかできない利点として評価されました。',
         'skill' : '#Django #SQLite #html #css',
+        'github' : 'https://github.com/h-cha/Django_terakoya',
     }
     return render(request, 'hello/works.html', params)
 
@@ -58,6 +60,7 @@ def work3(request):
         'text3' : '',
         'text4' : '',
         'skill' : '#java #postgreSQL #html #css #javascript',
+        'github' : '',
     }
     return render(request, 'hello/works.html',params)
 
@@ -70,5 +73,6 @@ def work4(request):
         'text3' : '',
         'text4' : '',
         'skill' : '#django #SQLite #html #css',
+        'github' : '',
     }
     return render(request, 'hello/works.html', params)
