@@ -7,7 +7,11 @@ html {
   font-size: 62.5%;
 }
 body {
+<<<<<<< HEAD
   background: #151515 url('../images/sky.jpg') no-repeat fixed left bottom;
+=======
+  background: #151515 url('../images/bg.png') no-repeat fixed left bottom;
+>>>>>>> 6aeae8c701ca74c498e187af72edad5bcd2b0847
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -175,6 +179,7 @@ body {
   transform: scaleY(-1);
 }
 .work-box.tree::after {
+<<<<<<< HEAD
   background-image: url('../images/blue.jpg');
 }
 .work-box.building::after {
@@ -185,6 +190,18 @@ body {
 }
 .work-box.sky::after {
   background-image: url('../images/fruit.jpg');
+=======
+  background-image: url('../images/tree.jpg');
+}
+.work-box.building::after {
+  background-image: url('../images/building.jpg');
+}
+.work-box.lake::after {
+  background-image: url('../images/lake.jpg');
+}
+.work-box.sky::after {
+  background-image: url('../images/sky.jpg');
+>>>>>>> 6aeae8c701ca74c498e187af72edad5bcd2b0847
 }
 .work-box:nth-child(odd) .work-image {
   margin: 60% 0 0;

@@ -77,7 +77,11 @@ def work4(request):
     params = {
         'goto' : 'index',
         'work_name' : '食材残さないよ太郎',
+<<<<<<< HEAD
         'text1' : '現在4人で作成中です',
+=======
+        'text1' : '現在作成中です',
+>>>>>>> 6aeae8c701ca74c498e187af72edad5bcd2b0847
         'text2' : '',
         'text3' : '',
         'text4' : '',
