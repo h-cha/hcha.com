@@ -82,7 +82,7 @@ def work4(request):
         'text3' : '',
         'text4' : '',
         'image1' : 'hello/images/top.PNG',
-        'image2' : 'hello/imges/register.PNG',
+        'image2' : 'hello/images/register.PNG',
         'image3' : 'hello/images/search.PNG',
         'image4' : 'hello/images/no_image.png',
         'skill' : '#django #SQLite #html #css',
