@@ -14,22 +14,20 @@
 <body>
   
   <section class="about" id="about">
-    <h2 class="heading">ABOUT ME</h2>
+    <h2 class="heading">{{ work_name }}</h2>
     <p class="about-text">
-      はじめまして。<br>
-      主にDjangoでWebアプリを作成しています。<br>
-      東京電機大学の大学３年です。<br>
-      実空間コンピューティング研究室に所属。
+      {{ text }}
 
     </p>
-    <a href="{% url goto %}" >HOME</a>
+    
     
     <p class="about-text">
-      世の中に無い新しいものを作る事を目指しています。<br>
-    </p>
+        {{ skill }}
+  
+      </p>
     <a href="https://github.com/h-cha" title="GitHub">Github</a>
     
-    
+    <a href="{% url goto %}" >HOME</a>
   </section>
 
   
