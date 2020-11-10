@@ -12,7 +12,7 @@ def test(request):
 
 def index(request):
     params = {
-        'goto' : 'work1',
+        'title' : 'hcha',
       #  'goto_work2' : 'work2',
        # 'goto_work3' : 'work3',
         #'goto_work4' : 'work4',
@@ -21,11 +21,9 @@ def index(request):
 
 
 def work1(request):
-    params = {
-        'goto' : 'index',
-    }
+    
 
-    return render(request, 'hello/index.html',params)
+    return render(request, 'hello/index.html')
 
 def work2(request):
     
