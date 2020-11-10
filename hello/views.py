@@ -32,6 +32,7 @@ def work1(request):
         'text2' : 'django_channelsというライブラリを使ってWebSocket通信を行いました。',
         'text3' : 'もともとはワードウルフゲームをする予定でしたが、難しくて断念',
         'text4' : '',
+        'image' : 'hello/images/bg.png'
         'skill' : '#Django #SQLite #html #css #javascript',
         'github' : 'https://github.com/h-cha/django_online_chat',
     }
