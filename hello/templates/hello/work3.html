@@ -14,7 +14,7 @@
 <body>
   
   <section class="about" id="about">
-    <h2 class="heading">{{ work_name }}</h2>
+	<h2 class="heading">{{ work_name }}</h2>
     <p class="about-text">
       {{ text1 }}<br>
       {{ text2 }}<br>
@@ -24,22 +24,22 @@
     
     <p class="about-text">
         {{ skill }}
-  
-      </p>
-    <p><a href="{{ github }}" title="GitHub"　 class="button">Github</a></p>
-    
-    <p><a href="{% url goto %}" class="button">HOME</a></p>
-  </section>
-  
-<h2>1,作成するソフトウェアの概要</h2>
+	</p>
+	<div class="buttons">
+        <a href="{{ github }}" class="button" >Github</a>
+        <a href="{% url goto %}" class="button button-showy" >HOME</a>
+    </div>
+
+	
+	<h2>1,作成するソフトウェアの概要</h2>
 <p>郵便番号を検索すると同じ市区町村の郵便番号と住所のリストが表示される。</p>
 <p>同じ市区町村の世代別人口とそれを基にした円グラフが表示される</p>
 <p>下の図のようなデータ(postalcode,population)を使った</p>
-<img src="{% static 'deta_postal.png' %}">
+<img src="{% static 'hello/images/deta_postal.png' %}">
 <p>populationテーブル</p>
-<img src="{% static 'deta_pop.png' %}">
+<img src="{% static 'hello/images/deta_pop.png' %}">
 <h2>2,設計方針</h2>
-<img src="{% static 'sekkei.png' %}">
+<img src="{% static 'hello/images/sekkei.png' %}">
 <p>クライアント側はhtmlを読み込むだけでサーバー側はデータベースの実行を行い、行った結果をクライアント側に渡している</p>
 <p>index.htmlを実行すると郵便番号検索画面が出る</p>
 <h2>3,プログラムの説明</h2>
@@ -72,7 +72,18 @@
 <p>円グラフにすることで視覚的にわかりやすくした。</p>
 <p>世代別人口比率を計算し高齢者が多い地域を一覧に出す機能を追加するともっと良くなると思った</p>
 <p>使えるデータを探すのに時間がかかったが、政府の機関から出ているデータは使いやすいことが分かった</p>
-</body>
+<p class="about-text">
+	{{ skill }}
+
+  </p>
+<div class="buttons">
+	<a href="{{ github }}" class="button" >Github</a>
+	<a href="{% url goto %}" class="button button-showy" >HOME</a>
+  </div>
+
+
+</section>
+  
 
   
   <footer class="footer">
