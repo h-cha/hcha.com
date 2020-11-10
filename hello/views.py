@@ -13,6 +13,7 @@ def test(request):
 def index(request):
     params = {
         'title' : 'hcha',
+        'goto' : 'work1'
       #  'goto_work2' : 'work2',
        # 'goto_work3' : 'work3',
         #'goto_work4' : 'work4',
