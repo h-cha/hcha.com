@@ -77,8 +77,8 @@ def work4(request):
     params = {
         'goto' : 'index',
         'work_name' : '食材残さないよ太郎',
-        'text1' : '現在4人で作成中です',
-        'text2' : '',
+        'text1' : '一人暮らしの友人が考えた案です。',
+        'text2' : '現在4人で作成中です。',
         'text3' : '',
         'text4' : '',
         'image1' : 'hello/images/top.JPG',
