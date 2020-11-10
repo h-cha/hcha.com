@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,400">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="{% static 'hello/css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'hello/css/style.css' %}">
+</head>
+<body>
+  
+  <section class="about" id="about">
+    <h2 class="heading">{{ work_name }}</h2>
+    <p class="about-text">
+      {{ text1 }}<br>
+      {{ text2 }}<br>
+      {{ text3 }}<br>
+      {{ text4 }}<br>
+    </p>
+    
+    <p class="about-text">
+        {{ skill }}
+  
+      </p>
+    <p><a href="{{ github }}" title="GitHub"　 class="button">Github</a></p>
+    
+    <p><a href="{% url goto %}" class="button">HOME</a></p>
+  </section>
+  
+<h2>1,作成するソフトウェアの概要</h2>
+<p>郵便番号を検索すると同じ市区町村の郵便番号と住所のリストが表示される。</p>
+<p>同じ市区町村の世代別人口とそれを基にした円グラフが表示される</p>
+<p>下の図のようなデータ(postalcode,population)を使った</p>
+<img src="{% static 'deta_postal.png' %}">
+<p>populationテーブル</p>
+<img src="{% static 'deta_pop.png' %}">
+<h2>2,設計方針</h2>
+<img src="{% static 'sekkei.png' %}">
+<p>クライアント側はhtmlを読み込むだけでサーバー側はデータベースの実行を行い、行った結果をクライアント側に渡している</p>
+<p>index.htmlを実行すると郵便番号検索画面が出る</p>
+<h2>3,プログラムの説明</h2>
+<p>String sql = "SELECT * FROM postalcode WHERE code=?";</p>
+<p>postalcodeテーブルから一致する郵便番号と住所を表示する</p>
+<p>この時得たprefectureとcityで同じ市区町村の郵便番号の一覧を選択する</p>
+<p>String sql_code = "SELECT * FROM postalcode WHERE prefecture='" + prefecture + "' and city='" + city + "'";</p>
+<p>その後取得したprefectureとciytでpopulationのcityで一致する項目を表示する</p>
+<p>例えばpostalcodeのcityは「札幌市中央区」でpopulationのcityは「札幌市　中央区」なので間にスペースを入れないと一致しない</p>
+<p>その例外処理を行っている</p>
+<img src="{% static 'hello/images/java.png' %}">
+<p>同じ市区町村の世代別人口を表示</p>
+<p>String sql_p = "SELECT * FROM population WHERE city='" + city_name + "'";</p>
+<h2>4,実行結果</h2>
+<h3>プログラムの起動後のウィンドウ</h3>
+<p>郵便番号が検索できる</p>
+<img src="{% static 'hello/images/kensaku.png' %}">
+<h3>2730000を入力</h3>
+<p>同じ市区町村の郵便番号の一覧を表示</p>
+<p>スクロールできるようになっている</p>
+<p>人口と世代別人口を円グラフで表示</p>
+<img src="{% static 'hello/images/2730000.png' %}">
+<img src="{% static 'hello/images/en.png' %}">
+<p>検索画面に戻る</p>
+<h3>検索画面で11111111を入力してみる</h3>
+<p>郵便番号ではない数字を入力されたら「入力番号は郵便番号ではありません」と出る。</p>
+
+<p>以上、作成したプログラムの実行例を示した。</p>
+<h2>考察</h2>
+<p>円グラフにすることで視覚的にわかりやすくした。</p>
+<p>世代別人口比率を計算し高齢者が多い地域を一覧に出す機能を追加するともっと良くなると思った</p>
+<p>使えるデータを探すのに時間がかかったが、政府の機関から出ているデータは使いやすいことが分かった</p>
+</body>
+
+  
+  <footer class="footer">
+      hcha site 
+  </footer>
+  
+</body>
+</html>

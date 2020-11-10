@@ -68,13 +68,10 @@ def work3(request):
         'text3' : '',
         'text4' : '',
         'image1' : 'hello/images/room.PNG',
-        'image2' : '',
-        'image3' : '',
-        'image4' : '',
         'skill' : '#java #postgreSQL #html #css #javascript',
         'github' : '',
     }
-    return render(request, 'hello/works.html',params)
+    return render(request, 'hello/work3.html',params)
 
 def work4(request):
     params = {
