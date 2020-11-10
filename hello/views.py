@@ -32,7 +32,10 @@ def work1(request):
         'text2' : 'django_channelsというライブラリを使ってWebSocket通信を行いました。',
         'text3' : 'もともとはワードウルフゲームをする予定でしたが、難しくて断念',
         'text4' : '',
-        'image' : 'hello/images/bg.png'
+        'image1' : 'hello/images/room.PNG',
+        'image2' : 'hello/images/login.PNG',
+        'image3' : 'hello/images/signup.PNG',
+        'image4' : 'hello/images/home.PNG',
         'skill' : '#Django #SQLite #html #css #javascript',
         'github' : 'https://github.com/h-cha/django_online_chat',
     }
@@ -47,6 +50,10 @@ def work2(request):
         'text2' : '中学校に行き、中学生の数学の学習補助を行いました。',
         'text3' : 'そこで中学生がつまづいていた課題をサポートするWEBアプリを２人で作成しました。',
         'text4' : '動画解説はWEBの教科書にしかできない利点として評価されました。',
+        'image1' : 'hello/images/bg.png',
+        'image2' : '',
+        'image3' : '',
+        'image4' : '',
         'skill' : '#Django #SQLite #html #css',
         'github' : 'https://github.com/h-cha/Django_terakoya',
     }
@@ -60,6 +67,10 @@ def work3(request):
         'text2' : '',
         'text3' : '',
         'text4' : '',
+        'image1' : 'hello/images/room.PNG',
+        'image2' : '',
+        'image3' : '',
+        'image4' : '',
         'skill' : '#java #postgreSQL #html #css #javascript',
         'github' : '',
     }
@@ -73,6 +84,10 @@ def work4(request):
         'text2' : '',
         'text3' : '',
         'text4' : '',
+        'image1' : 'hello/images/bg.png',
+        'image2' : '',
+        'image3' : '',
+        'image4' : '',
         'skill' : '#django #SQLite #html #css',
         'github' : '',
     }
